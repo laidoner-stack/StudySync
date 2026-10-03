@@ -1,0 +1,284 @@
+
+/* <-- Määritelty värikoodit --> */
+:root {
+--color-primary: #0F2942;
+--color-secondary: #3182CE;
+--color-background: #F7FAFC;
+--color-surface: #FFFFFF;
+--color-text: #1A202C;
+}
+
+
+/* <-- Header ja logo --> */
+header {
+background-color:#D8E6F7;
+padding: 4px 16px;
+display: flex;
+align-items: center;
+gap: 10px;
+box-shadow: 0px 3px 8px rgba(0,0,0,0.08);
+position: sticky;
+top: 0;
+z-index: 1000;
+} .logo {
+height: 50px;
+width: auto;
+}
+
+
+/* <-- Pohja/tausta --> */
+body {
+background-color: #F7FAFC;
+margin: 0;
+font-family: Inter, sans-serif;
+color: var(--color-text);
+padding-bottom: 30px;
+}
+
+
+/* <-- Otsikot ja perus fontti --> */
+h1 {
+font-size: clamp(26px, 5vw, 42px);
+color: var(--color-primary);
+line-height: 1.1;
+margin-top: 0px;
+margin-bottom: 0px;
+} h2 {
+font-size: clamp(22px, 4vw, 34px);
+color: var(--color-primary);
+line-height: 1.25;
+margin-top: 0px;
+margin-bottom: 0px;
+} h3 {
+font-size: clamp(20px, 3vw, 28px);
+color: var(--color-primary);
+line-height: 1.3;
+margin-top: 0px;
+margin-bottom: 0px;
+} h4 {
+font-size: clamp(17px, 2.5vw, 22px);
+color: var(--color-primary);
+line-height: 1.4;
+} p {
+font-size: clamp(16px, 2.5vw, 18px);
+line-height: 1.5;
+}
+
+
+/* <-- Tervehdys ja sivuja tutustavat lauseet --> */
+.hero {padding: 10px 16px 0px 14px;
+} .hero-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+} .hero-description {
+color: #4A5568;
+font-size: clamp(14px, 2.5vw, 18px);
+margin-top: 2px;
+margin-bottom: 0;
+font-weight: normal;
+}
+
+
+/* <-- pvm --> */
+.date {
+color: #4A5568;
+font-size: clamp(14px, 2.5vw, 18px);
+}
+
+
+/* <-- Quote --> */
+.quote {
+color: #4A5568;
+padding-left: 12px;
+margin-top: 0px;
+margin-bottom: 20px;
+border-left: 3px solid rgb(75, 160, 212);
+border-radius: 4px;
+} .daily-quote {
+color: #4A5568;
+padding-left: 12px;
+margin-top: 0px;
+margin-bottom: 0px;
+font-style: italic;
+border-left: 3px solid rgb(75, 160, 212);
+border-radius: 4px;
+} .quote-text {
+font-style: italic;
+}
+
+
+/* <-- Tausta "kortit" --> */
+.card {
+background-color: white;
+padding: 2px 12px 10px 12px;
+margin: 8px 8px;
+border-radius: 12px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+} .card p {
+margin: 4px 0;
+}
+
+
+/* <-- Uutisen detailit --> */
+.news-details {
+padding: 10px;
+} .news-details h1 {
+margin-bottom: 20px;
+} .news-details h2 {
+margin-top: 24px;
+margin-bottom: 12px;
+} .news-details h3 {
+margin-top: 20px;
+margin-bottom: 10px;
+} .news-image {
+width: 90%;
+max-width: 350px;
+display: block;
+margin: 15px auto;
+border-radius: 10px;
+justify-content: space-evenly;
+} 
+
+
+/* <-- "Avaa ja lue lisää" detailit --> */
+details summary {
+color: #4A5568;
+font-size: clamp(12px, 2.5vw, 18px);
+font-style: italic;
+cursor: pointer;
+font-weight: bold;
+}
+
+
+/* <-- Profiilissa edistymisen näkymä --> */
+.progress-info {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 6px;
+} .progress-percent {
+color: #4A5568;
+font-size: clamp(14px, 2.5vw, 18px);
+} .progress-bar {
+width: 100%;
+height: 10px;
+background-color: #E2E8F0;
+border-radius: 10px;
+overflow: hidden;
+} .progress {
+width: 81%;
+height: 100%;
+background-color: #10B981;
+}
+
+/* <-- Profiilissa opiskelijankortti --> */
+.student-card {
+background-color: #F7FAFC;
+border: 1px solid #E2E8F0;
+border-radius: 10px;
+padding: 2px;
+margin-top: 6px;
+text-align: center;
+} .student-qr {
+width: 140px;
+height: auto;
+display: block;
+margin: 6px auto; 
+} .student-number {
+color: #4A5568;
+font-size: 12px;
+margin-top: 2px;
+} .student-card h4 {
+margin: 6px 0;
+}
+
+
+/* <-- Kalenteri detailit --> */
+.period {
+font-size: clamp(14px, 2.5vw, 18px);
+font-weight: normal;
+color: #4A5568;
+} .week {
+display: flex;
+justify-content: space-between;
+text-align: center;
+margin-top: 15px;
+} .day {
+font-size: clamp(14px, 2.5vw, 18px);
+} .dot {
+display: inline-block;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+} .school {
+background-color: #3182CE;
+} .deadline {
+background-color: #F59E0B;
+} .personal {
+background-color: #9CA3AF;
+} .work {
+background-color: #10B981;
+} .workout {
+background-color: #e942bf;
+} .legend {
+margin-top:12px;
+margin-bottom: 0;
+text-align: center;
+font-size: clamp(10px, 2.5vw, 14px);
+color: #4A5568;
+} .legend-item {
+display: inline-flex;
+align-items: center;
+gap: 4px;
+margin: 0 8px;
+}
+
+
+/* <-- Painikenapit --> */
+.service-button {
+display: block;
+background-color: var(--color-secondary);
+color: white;
+text-decoration: none;
+padding: 10px;
+margin-top: 10px;
+border-radius: 8px;
+text-align: center;
+}
+
+
+/* <-- Footer ja navigointi --> */
+.poweredBy {
+color: #4A5568;
+padding: 20px;
+text-align: center;
+font-size: clamp(12px, 2.5vw, 16px);
+}
+
+.navigaatio {
+display: flex;
+background-color:#D8E6F7;
+padding: 10px;
+text-align: center;
+box-shadow: 0px -3px 8px rgba(0,0,0,0.08);
+position: fixed;
+justify-content: space-evenly;
+gap: 2px;
+z-index: 1000;
+align-items: center;
+bottom: 0;
+left: 0;
+width: 100%;
+} .navigaatio a {
+text-decoration: none;
+color: var(--color-primary);
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: clamp(16px, 2.5vw, 18px);
+min-width: 0;
+} .active {
+font-weight: bold;
+}
+
