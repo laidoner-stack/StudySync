@@ -27,6 +27,11 @@ width: auto;
 
 
 /* <-- Pohja/tausta --> */
+main {
+max-width: 500px;
+margin: 0 auto;
+}
+
 body {
 background-color: #F7FAFC;
 margin: 0;
@@ -254,6 +259,8 @@ color: #4A5568;
 padding: 20px;
 text-align: center;
 font-size: clamp(12px, 2.5vw, 16px);
+max-width: 600px;
+margin: 0 auto;
 }
 
 .navigaatio {
